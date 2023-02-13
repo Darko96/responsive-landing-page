@@ -1,0 +1,185 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin-top: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION */
+
+header {
+  background-color: #136c72;
+  padding: 2rem 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.nav__item--push-right {
+  margin-left: auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav__item:hover {
+  filter: brightness(110%);
+}
+
+.nav__link--button {
+  background-color: #fff;
+  color: red;
+  border-radius: 10rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav__link--button .nav__link {
+  color: #136c72;
+}
+
+.nav__link--button:hover {
+  filter: brightness(110%);
+}
+
+/* HERO SECTION */
+
+.hero {
+  padding: 10rem 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero h1 {
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 10rem;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.hero__img {
+  width: 32%;
+}
+
+/* MAIN SECTION */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+/* Column one */
+.column-one {
+  width: 62%;
+  padding: 5rem 0;
+}
+
+.column-one h2 {
+  color: #136c72;
+}
+
+.column-one h2,
+p {
+  margin-bottom: 3rem;
+}
+
+/* Column two */
+.column-two {
+  width: 32%;
+  background-color: #136c72;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #fff;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.column-two h2,
+p {
+  margin-bottom: 3rem;
+}
