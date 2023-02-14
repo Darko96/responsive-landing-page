@@ -50,10 +50,25 @@ header {
   padding: 2rem 0;
 }
 
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  /* Ako imamo u navigaciji dva elementa, logo i nav kontejner sa listom
+  li elemenata a zelimo da postavimo da pored slike se nalazi jedan deo
+  nav liste a na drugom kraju da se nalazi drugo deo nav liste */
+  /* Da bi to ucinili mozemo da postavimo da nav kontejner ima sirinu 100%
+  Dok drugi nacin da to uradimo je ucinimo da nav element ima flex-grow
+  sto ce uciniti da se taj flex item poveca i da zauzme sav slobodan prostor  */
+  flex-grow: 1;
+  /* width: 100%; */
 }
 
 .nav__list {
@@ -65,6 +80,10 @@ header {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
+}
+
+.nav__list--primary {
+  margin: 0 auto;
 }
 
 .nav__item--push-right {
@@ -182,4 +201,26 @@ p {
 .column-two h2,
 p {
   margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .hero__text,
+  .hero__img,
+  .column-one,
+  .column-two {
+    width: 100%;
+  }
+
+  .container,
+  .flex {
+    flex-direction: column;
+  }
+
+  .hero__img {
+    margin-top: 2rem;
+  }
 }
